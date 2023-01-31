@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Login Form</title>
+      <link rel="stylesheet" href="style1.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   </head>
+   <body>
+      <script>
+         function fun ()
+                    {
+                       var available_user_name = Array("ahmed","tara"),
+                           available_user_pass = Array("2002","tara"),
+                      flag=true;
+                      for (var i=0 ; i<available_user_name.length ;i++) 
+                       {
+                        if(available_user_name[i]==document.getElementById('username').value &&
+                        available_user_pass[i]==document.getElementById('pass').value)
+                         {
+                          flag=true;
+                             break;}
+                         else
+                          flag=false;
+                       }
+                           
+                            if(flag==true)
+                            {
+                              alert("valid account");
+                               window.open("file://C:/Users/user/Desktop/program/index.html");
+                            }
+                           else
+                            alert("not valid");
+                     }
+         </script>
+      <div class="bg-img">
+         <div class="content">
+            <header>Login Form</header>
+            <form>
+               <div class="field">
+                  <span class="fa fa-user"></span>
+                  <input type="text" required placeholder="Email or Phone" name="text" id="username">
+               </div>
+               <div class="field space">
+                  <span class="fa fa-lock"></span>
+                  <input type="password" class="pass-key" required placeholder="Password" id="pass">
+                  <span class="show">SHOW</span>
+               </div>
+               <div class="pass">
+                  <a href="index 4.html">Forgot Password?</a>
+               </div>
+               <div class="field" >
+                  <input type="button" value="LOGIN"  onclick="fun()">
+               </div>
+            </form>
+            <div class="login">
+               Or login with
+            </div>
+            <div class="links">
+               <div class="facebook">
+                  <i class="fab fa-facebook-f"><span><a href="https://www.facebook.com">Facebook</a></span></i>
+               </div>
+               <div class="instagram">
+                  <i class="fab fa-instagram"><span><a href="https://www.instagram.com/">Instagram</a></span></i>
+               </div>
+            </div>
+            <div class="signup">
+               Don't have account?
+               <a href="index 41.html">Signup Now</a>
+
+            </div>
+         </div>
+      </div>
+      
+   </body>
+</html>
